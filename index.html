@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Dohledávač adres</title>
+	
+	<meta content="" name="keywords">
+	<meta content="" name="author">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="Style.css" />
+	<link rel="stylesheet" type="text/css" href="RuianHelper.css" />
+</head>
+<body>
+
+<div class="container">
+
+	<h1>Dohledávač adres</h1>
+
+	<form autocomplete="off" role="presentation">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="form-group">
+		        	<label for="street">Ulice a číslo:</label>
+		        	<input type="text" class="form-control" id="ruianStreet" name="StreeForm" autocomplete="new-password" />
+		        </div>
+	        </div>
+			<div class="col-md-6">
+				<div class="form-group">
+		        	<label for="street">Obec:</label>
+		        	<input type="text" class="form-control" id="ruianCity" name="CityForm" />
+		        </div>
+	        </div>
+			<div class="col-md-6">
+				<div class="form-group">
+		        	<label for="street">PSČ:</label>
+		        	<input type="text" class="form-control" id="ruianZip" name="ZipForm" />
+		        </div>
+	        </div>
+			<div class="col-md-12">
+		        <p>In publishing and graphic design, lorem ipsum is common placeholder text used to demonstrate the graphic elements of a document or visual presentation, such as web pages, typography, and graphical layout. It is a form of "greeking".</p>
+				<p>Even though using "lorem ipsum" often arouses curiosity due to its resemblance to classical Latin, it is not intended to have meaning. Where text is visible in a document, people tend to focus on the textual content rather than upon overall presentation, so publishers use lorem ipsum when displaying a typeface or design in order to direct the focus to presentation. "Lorem ipsum" also approximates a typical distribution of letters in English.</p>
+    		</div>
+    	</div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="Ruian.js" type="text/javascript"></script>
+<script type="text/javascript">
+     $(document).ready(function() {         
+         Ruian.init();
+     });
+</script>
+
+</body>
+</html>

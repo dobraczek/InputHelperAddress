@@ -1,0 +1,33 @@
+/**
+ * Dohledávaè adres
+ * @author Martin Dobry
+ * @link http://webscript.cz
+ * @version 1.0
+ */
+
+.ruian-helper {
+	z-index: 9999;
+	position: absolute;
+	display: block;
+	background-color: #ffffff;
+	border: 1px solid #aaaaaa;
+}
+
+.ruian-helper ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ruian-helper ul li {
+	padding: 6px 10px;
+	cursor: Default;
+}
+
+.ruian-helper ul li:hover {
+	background-color: #eeeeee;
+}
+
+.ruian-helper .selected {
+	background-color: #eeeeee;
+}
